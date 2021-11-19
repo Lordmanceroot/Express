@@ -1,0 +1,29 @@
+<%- include('../../fragments/header.ejs'); %>
+<%- include('./menu.ejs'); %>
+
+<div>Введите id товара, который хотите изменить</div>
+
+<form method="POST">
+    <div>
+        <label for="name">ID</label>
+        <input type="text" name="id" id="id">
+    </div>
+    <div>
+        <label for="name">Название продукта</label>
+        <input type="text" name="product" id="product">
+    </div>
+    <div>
+        <label for="name">Цена</label>
+        <input type="text" name="price" id="price">
+    </div>
+    <div>
+        <label for="name">Количество</label>
+        <input type="text" name="count" id="count">
+    </div>
+    <div>
+        <button type="submit">Добавить</button>
+    </div>
+</form>
+
+
+<%- include('../../fragments/footer.ejs'); %>
